@@ -6,7 +6,7 @@ Getting Started
 
 To initialize your local repository
 
-$ repo init -u git://github.com/asce1062/platform_manifest.git -b master
+$ repo init -u git://github.com/asce1062/platform_manifest.git -b kk-4.4.3-caf
 
 Then to sync up:
 
