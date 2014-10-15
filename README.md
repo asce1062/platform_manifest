@@ -1,5 +1,29 @@
-This manifest is for Non-Nexus devices, use branch kk-4.4.3 if you want to build for a Nexus
+MAHDI-ROM manifest for LG L7 && L5 devices 
+===========
 
-$ repo init -u git://github.com/Mahdi-Rom/platform_manifest.git -b kk-4.4.3-caf
+Getting Started
+---------------
 
-$ repo sync
+To initialize your local repository
+
+$ repo init -u git://github.com/asce1062/platform_manifest.git -b master
+
+Then to sync up:
+
+$ repo sync -j#
+
+Build your device:
+
+$ . build/envsetup.sh
+
+$ lunch (enter device number and hit enter)
+
+$ brunch P705(P700 or e610)
+
+Flash ZIP:
+
+out/target/product/DEVICENAME/mahdi-VERSION-DEVICENAME.zip
+
+=======
+android
+=======
