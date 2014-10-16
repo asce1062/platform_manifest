@@ -1,0 +1,63 @@
+MAHDI-ROM Source For LG L7 && L5
+=================================
+To get started with Mahdi-Rom, you'll need to get
+familiar with [Git and Repo](http://source.android.com/source/version-control.html).
+
+Create the Directories
+----------------------
+
+You will need to set up some directories in your build environment.
+
+To create them run:
+
+    mkdir -p ~/bin
+    mkdir -p ~/android/mahdi
+
+Install the Repository
+----------------------
+
+Enter the following to download the "repo" binary:
+
+    curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+
+    chmod a+x ~/bin/repo
+
+You may need to reboot for these changes to take effect. 
+Now enter the following to initialize the repository:
+
+    cd ~/android/mahdi
+
+Repositories:
+-------------
+
+Before you continue --> run this in the terminal
+
+    repo init -u git://github.com/asce1062/platform_manifest.git -b kk-4.4.3-caf
+
+    repo sync
+    
+
+Building the System
+---------------
+
+Apply Classic Webview Patch && No text Auto-sizing For Browser (A MUST!)
+
+    cd device/lge/msm7x27a-common/patches && ./apply.sh 
+
+Build Mahdi-Rom with the following commands
+
+    . build/envsetup.sh
+
+    lunch (enter device number and hit enter)
+
+    brunch {device}
+    
+Example:
+
+    . build/envsetup.sh
+
+    lunch
+
+    Which would you like? [aosp_arm-eng] 11 (Number For P705)
+
+    brunch P705
