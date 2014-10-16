@@ -58,6 +58,6 @@ Example:
 
     lunch
 
-    Which would you like? [aosp_arm-eng] 11 (Number For P705)
+    Which would you like? [aosp_arm-eng] 8 (Number For P705, this could varry depending on the number of devices you are building)
 
     brunch P705
