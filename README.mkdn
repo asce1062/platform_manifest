@@ -41,8 +41,12 @@ Building the System
 ---------------
 
 Apply Classic Webview Patch && No text Auto-sizing For Browser (A MUST!)
+     
+    . build/envsetup.sh
 
-    cd device/lge/msm7x27a-common/patches && ./apply.sh 
+    cd device/lge/msm7x27a-common/patches && ./apply.sh
+
+    croot
 
 Build Mahdi-Rom with the following commands
 
